@@ -40,20 +40,30 @@ This work aims to explore a new research direction: sample-efficient test-time s
 
 We use the *Qwen2.5-Coder-32B-Instruct model* as our base model for training Satori-SWE-32B. Through the two-stage SFT training and RL training, Satori-SWE-32B outperforms all small-scale models under greedy decoding, while achieving comparable performance with current SOTA SWE-RL with smaller model scale (32B v.s. 70B),  much fewer training data (30K v.s. million-scale) and test-time scaling samples (50 v.s. 500).
 
-| Model                     | Params   | Samples | Acc. (%) |
-| ------------------------- | -------- | ------- | -------- |
-| GPT‑4o (Agentless)        | –        | 1       | 38.8     |
-| Claude 3.5 (Agentless)    | –        | 1       | 50.8     |
-| DeepSeek-V3 (Agentless)    | –        | -       | 42.0     |
-| SWE-Fixer                 | 72 B     | 1       | 30.2     |
-| SWE-Gym-32B            | 32 B     | 1      | 20.6     |
-| SWE-Gym-32B            | 32 B     | 16      | 32.0     |
-| Llama‑3 SWE‑RL            | 70 B     | 80      | 37.0     |
-| Llama‑3 SWE‑RL            | 70 B     | 500     | 41.0     |
-| **Satori‑SWE‑32B** | **32 B** | **1**   | **35.8** |
-| **Satori‑SWE‑32B**        | **32 B**     | **10**      |  **38.9**     |
-| **Satori‑SWE‑32B**       | **32 B**     | **50**  | **41.6** |
-
+<table>
+  <thead>
+    <tr>
+      <th style="width: 30%; text-align: center;">Model</th>
+      <th style="width: 15%; text-align: center;">Params</th>
+      <th style="width: 15%; text-align: center;">Best@N</th>
+      <th style="width: 20%; text-align: center;">Accuracy (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="text-align: center;">GPT‑4o (Agentless)</td><td style="text-align: center;">–</td><td style="text-align: center;">1</td><td style="text-align: center;">38.8</td></tr>
+    <tr><td style="text-align: center;">Claude 3.5 (Agentless)</td><td style="text-align: center;">–</td><td style="text-align: center;">1</td><td style="text-align: center;">50.8</td></tr>
+    <tr><td style="text-align: center;">DeepSeek‑V3 (Agentless)</td><td style="text-align: center;">–</td><td style="text-align: center;">–</td><td style="text-align: center;">42.0</td></tr>
+    <tr><td style="text-align: center;">SWE‑Fixer</td><td style="text-align: center;">72 B</td><td style="text-align: center;">1</td><td style="text-align: center;">30.2</td></tr>
+    <tr><td style="text-align: center;">SWE‑Gym‑32B</td><td style="text-align: center;">32 B</td><td style="text-align: center;">1</td><td style="text-align: center;">20.6</td></tr>
+    <tr><td style="text-align: center;">SWE‑Gym‑32B</td><td style="text-align: center;">32 B</td><td style="text-align: center;">16</td><td style="text-align: center;">32.0</td></tr>
+    <tr><td style="text-align: center;">Llama‑3 SWE‑RL</td><td style="text-align: center;">70 B</td><td style="text-align: center;">80</td><td style="text-align: center;">37.0</td></tr>
+    <tr><td style="text-align: center;">Llama‑3 SWE‑RL</td><td style="text-align: center;">70 B</td><td style="text-align: center;">500</td><td style="text-align: center;">41.0</td></tr>
+    <tr><td style="text-align: center;"><b>Satori‑SWE‑32B</b></td><td style="text-align: center;"><b>32 B</b></td><td style="text-align: center;"><b>1</b></td><td style="text-align: center;"><b>35.8</b></td></tr>
+    <tr><td style="text-align: center;"><b>Satori‑SWE‑32B</b></td><td style="text-align: center;"><b>32 B</b></td><td style="text-align: center;"><b>10</b></td><td style="text-align: center;"><b>38.9</b></td></tr>
+    <tr><td style="text-align: center;"><b>Satori‑SWE‑32B</b></td><td style="text-align: center;"><b>32 B</b></td><td style="text-align: center;"><b>25</b></td><td style="text-align: center;"><b>40.2</b></td></tr>
+    <tr><td style="text-align: center;"><b>Satori‑SWE‑32B</b></td><td style="text-align: center;"><b>32 B</b></td><td style="text-align: center;"><b>50</b></td><td style="text-align: center;"><b>41.6</b></td></tr>
+  </tbody>
+</table>
 
 ## **Satori Team Members**
 <span>$&#8224;$</span>: Project lead
