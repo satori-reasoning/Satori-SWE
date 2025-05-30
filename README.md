@@ -1,6 +1,6 @@
 # Satori-SWE: Evolutionary Test-Time Scaling for Sample-Efficient Software Engineering
 
-[![Homepage](https://img.shields.io/badge/🏠-Homepage-3C47EB.svg)](https://satori-reasoning.github.io/) &nbsp;&nbsp; [![HuggingFace](https://img.shields.io/badge/🤗-Model&Demo-E87948.svg)](https://huggingface.co/Satori-reasoning) &nbsp;&nbsp; [![Paper](https://img.shields.io/badge/arXiv-paper-b31b1b)](https://huggingface.co/Satori-reasoning) &nbsp;&nbsp;
+[![Homepage](https://img.shields.io/badge/🏠-Homepage-3C47EB.svg)](https://satori-reasoning.github.io/) &nbsp;&nbsp; [![HuggingFace](https://img.shields.io/badge/🤗-Model&Demo-E87948.svg)](https://huggingface.co/Satori-reasoning) &nbsp;&nbsp; [![Paper](https://img.shields.io/badge/arXiv-paper-b31b1b)](https://arxiv.org/abs/2505.23604) &nbsp;&nbsp;
 
 
 
@@ -89,5 +89,13 @@ For questions, please:
 
 ## **Citation**
 ```
-
+@misc{zeng2025satorisweevolutionarytesttimescaling,
+      title={Satori-SWE: Evolutionary Test-Time Scaling for Sample-Efficient Software Engineering}, 
+      author={Guangtao Zeng and Maohao Shen and Delin Chen and Zhenting Qi and Subhro Das and Dan Gutfreund and David Cox and Gregory Wornell and Wei Lu and Zhang-Wei Hong and Chuang Gan},
+      year={2025},
+      eprint={2505.23604},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2505.23604}, 
+}
 ```
